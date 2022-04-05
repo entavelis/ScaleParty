@@ -2,7 +2,7 @@
 
 [Paper](https://arxiv.org/abs/) [Video](https://twitter.com/i/status/1249680641597362176)
 
-![SESAME teaser](media/teaser.png)
+![SESAME teaser](teaser.png)
 
 ## Interactive Generation
 ![til](./scaleparty.gif)
