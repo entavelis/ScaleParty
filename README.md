@@ -4,7 +4,8 @@
 
 ![SESAME teaser](media/teaser.png)
 
-
+## Interactive Generation
+![til](./scaleparty.gif)
 
 </code></pre>
 
