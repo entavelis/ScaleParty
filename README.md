@@ -1,6 +1,6 @@
 # Arbitrary-Scale Image Synthesis
 
-[Paper](https://arxiv.org/abs/) [Video](https://twitter.com/i/status/1249680641597362176)
+[Paper](https://arxiv.org/abs/2204.02273) [Video](https://twitter.com/i/status/1249680641597362176)
 
 ![SESAME teaser](teaser.png)
 
