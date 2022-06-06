@@ -1,11 +1,42 @@
 # Arbitrary-Scale Image Synthesis
 
-[Paper](https://arxiv.org/abs/2204.02273) [Video](https://twitter.com/i/status/1249680641597362176)
+[Paper](https://arxiv.org/abs/2204.02273) 
 
-![SESAME teaser](teaser.png)
+![Teaser](./visuals/teaser.png)
 
 ## Interactive Generation
-![til](./scaleparty.gif)
+![til](./visuals/scaleparty.gif)
+
+You can experiment with the tool, in the scaleparty.ipynb notebook.
+
+## Installation 
+This project was built upon the [mmgeneration](https://github.com/open-mmlab/mmgeneration) framework.
+
+We use python 3.7.10, pytorch 1.8.1 and mmcv-full 1.3.3
+
+You can use the conda environment in the _environment.yml_ file. You may need to install mmcv-full from source, following the instructions [here](https://mmcv.readthedocs.io/en/latest/get_started/installation.html).
+
+After installing mmcv-full, install the scaleparty flavor of mmgeneration, by running this inside the cloned folder:
+
+```
+pip install -v -e .
+```
+## Pretrained models
+
+You can find the pretrained models [here](https://owncloud.csem.ch/owncloud/index.php/s/DREiMu9BktcGuS9).
+
+## Training
+
+```
+python -u -m torch.distributed.launch --nproc_per_node=8 --master_port=8899 tools/train.py configs/scaleparty/FFHQ_ScaleParty.py --launcher pytorch --work-dir path-to-workdir --wandb
+``` 
+
+## Creating the fid pkl for evaluation. 
+First, use the resize.py script to resize the dataset to the required sizes for all evaluation calculations.
+
+```
+for size in `seq 256 64 512 `; do; echo "ffhq_"$size".pkl"; python tools/utils/inception_stat.py --imgsdir path-to-dataset/images"$size"x"$size" --size $size --pklname ffhq_"$size".pkl  --num-samples 50000; done
+```
 
 </code></pre>
 
@@ -13,3 +44,26 @@ We would like to thank the following repos, their code was essential in the deve
 - https://github.com/open-mmlab/mmgeneration
 - https://github.com/rosinality/stylegan2-pytorch/
 
+If you find this project useful in your research, please consider citing:
+
+```BibTeX
+@misc{ntavelis2022scaleparty,
+  doi = {10.48550/ARXIV.2204.02273},
+  url = {https://arxiv.org/abs/2204.02273},
+  author = {Ntavelis, Evangelos and Shahbazi, Mohamad and Kastanis, Iason and Timofte, Radu and Danelljan, Martin and Van Gool, Luc},
+  title = {Arbitrary-Scale Image Synthesis},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{2021mmgeneration,
+    title={{MMGeneration}: OpenMMLab Generative Model Toolbox and Benchmark},
+    author={MMGeneration Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmgeneration}},
+    year={2021}
+}
+```
+
+## Acknowledgements
+This work was partly supported by [CSEM](www.csem.ch) and the ETH Future Computing Laboratory (EFCL), financed by a gift from Huawei Technologies.
