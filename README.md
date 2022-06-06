@@ -66,4 +66,4 @@ If you find this project useful in your research, please consider citing:
 ```
 
 ## Acknowledgements
-This work was partly supported by [CSEM](www.csem.ch) and the ETH Future Computing Laboratory (EFCL), financed by a gift from Huawei Technologies.
+This work was partly supported by [CSEM](https://www.csem.ch) and the ETH Future Computing Laboratory (EFCL), financed by a gift from Huawei Technologies.
