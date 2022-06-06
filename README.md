@@ -20,13 +20,22 @@ This project was built upon the [mmgeneration](https://github.com/open-mmlab/mmg
 
 We use python 3.7.10, pytorch 1.8.1 and mmcv-full 1.3.3
 
-You can use the conda environment in the _environment.yml_ file. You may need to install mmcv-full from source, following the instructions [here](https://mmcv.readthedocs.io/en/latest/get_started/installation.html).
+You can use the conda environment in the _environment.yml_ file.
+
+```
+conda env create --file environment.yml
+conda activate scaleparty
+```
+
+### In case of problem:
+You may need to install mmcv-full from source, following the instructions [here](https://mmcv.readthedocs.io/en/latest/get_started/installation.html).
 
 After installing mmcv-full, install the scaleparty flavor of mmgeneration by running the following inside the cloned folder:
 
 ```
 pip install -v -e .
 ```
+
 ## Pretrained models
 
 You can find the pretrained models [here](https://owncloud.csem.ch/owncloud/index.php/s/DREiMu9BktcGuS9).
