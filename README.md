@@ -46,9 +46,7 @@ for size in `seq 256 64 512 `; do; echo "ffhq_"$size".pkl"; python tools/utils/i
 
 </code></pre>
 
-We would like to thank the following repos, their code was essential in the developement of this project:
-- https://github.com/open-mmlab/mmgeneration
-- https://github.com/rosinality/stylegan2-pytorch/
+### Citation
 
 If you find this project useful in your research, please consider citing:
 
@@ -72,4 +70,9 @@ If you find this project useful in your research, please consider citing:
 ```
 
 ## Acknowledgements
+We would like to thank the following repos, their code was essential in the developement of this project:
+- https://github.com/open-mmlab/mmgeneration
+- https://github.com/rosinality/stylegan2-pytorch/
+
+
 This work was partly supported by [CSEM](https://www.csem.ch) and the ETH Future Computing Laboratory (EFCL), financed by a gift from Huawei Technologies.
