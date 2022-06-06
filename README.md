@@ -4,6 +4,10 @@
 
 ![Teaser](./visuals/teaser.png)
 
+![zoomin](./visuals/zoom0.gif)
+![zoomin](./visuals/zoom1.gif)
+
+
 ## Interactive Generation
 ![til](./visuals/scaleparty.gif)
 
