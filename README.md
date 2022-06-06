@@ -9,7 +9,7 @@
 
 You can experiment with the tool using the scaleparty.ipynb notebook.
 
-## Multi-Scale Generation 
+## Arbitrary-Scale Image Synthesis samples 
 
 <img src="./visuals/zoom0.gif" align="left" height="50%" width="50%">
 <img src="./visuals/zoom1.gif" align="left" height="50%" width="50%">
