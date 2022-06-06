@@ -7,7 +7,7 @@
 ## Interactive Generation
 ![til](./visuals/scaleparty.gif)
 
-You can experiment with the tool, in the scaleparty.ipynb notebook.
+You can experiment with the tool using the scaleparty.ipynb notebook.
 
 ## Installation 
 This project was built upon the [mmgeneration](https://github.com/open-mmlab/mmgeneration) framework.
