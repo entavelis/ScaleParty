@@ -4,16 +4,17 @@
 
 ![Teaser](./visuals/teaser.png)
 
-<img src="./visuals/zoom0.gif" align="left" height="50%" width="50%">
-<img src="./visuals/zoom1.gif" align="left" height="50%" width="50%">
-
-
-
-
 ## Interactive Generation
 ![til](./visuals/scaleparty.gif)
 
 You can experiment with the tool using the scaleparty.ipynb notebook.
+
+
+## Multi-Scale Geneartion 
+
+![til](./visuals/scaleparty.gif)
+<img src="./visuals/zoom0.gif" align="left" height="50%" width="50%">
+<img src="./visuals/zoom1.gif" align="left" height="50%" width="50%">
 
 ## Installation 
 This project was built upon the [mmgeneration](https://github.com/open-mmlab/mmgeneration) framework.
