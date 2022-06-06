@@ -4,7 +4,8 @@
 
 ![Teaser](./visuals/teaser.png)
 
-![zoomin](./visuals/zoom0.gif)![zoomin](./visuals/zoom1.gif)
+![zoomin0]<img src="./visuals/zoom0.gif" align="left" height="50%" width="50%">
+![zoomin1]<img src="./visuals/zoom1.gif" align="left" height="50%" width="50%">
 
 
 ## Interactive Generation
