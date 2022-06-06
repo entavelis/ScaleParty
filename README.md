@@ -4,8 +4,7 @@
 
 ![Teaser](./visuals/teaser.png)
 
-![zoomin](./visuals/zoom0.gif)
-![zoomin](./visuals/zoom1.gif)
+![zoomin](./visuals/zoom0.gif)![zoomin](./visuals/zoom1.gif)
 
 
 ## Interactive Generation
