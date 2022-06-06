@@ -32,7 +32,7 @@ python -u -m torch.distributed.launch --nproc_per_node=8 --master_port=8899 tool
 ``` 
 
 ## Creating the fid pkl for evaluation. 
-First, use the resize.py script to resize the dataset to the required sizes for all evaluation calculations.
+First, use the resize.py script to resize the dataset to the required sizes for all evaluation calculations. This is important as it replicates the resizing procedure we deploy during training.
 
 ```
 for size in `seq 256 64 512 `; do; echo "ffhq_"$size".pkl"; python tools/utils/inception_stat.py --imgsdir path-to-dataset/images"$size"x"$size" --size $size --pklname ffhq_"$size".pkl  --num-samples 50000; done
