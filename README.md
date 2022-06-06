@@ -34,7 +34,7 @@ You can find the pretrained models [here](https://owncloud.csem.ch/owncloud/inde
 ## Training
 
 ```
-python -u -m torch.distributed.launch --nproc_per_node=8 --master_port=8899 tools/train.py configs/scaleparty/FFHQ_ScaleParty.py --launcher pytorch --work-dir path-to-workdir --wandb
+python -u -m torch.distributed.launch --nproc_per_node=8 --master_port=8899 tools/train.py configs/scaleparty/FFHQ_ScaleParty.py --launcher pytorch --work-dir path-to-workdir --cfg-options data.samples_per_gpu=4 
 ``` 
 
 ## Creating the fid pkl for evaluation. 

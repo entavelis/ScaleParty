@@ -1,4 +1,4 @@
-name: open-mmlab
+name: scaleparty
 channels:
   - pytorch
   - defaults
