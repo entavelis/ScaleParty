@@ -40,10 +40,13 @@ pip install -v -e .
 You can find the pretrained models [here](https://owncloud.csem.ch/owncloud/index.php/s/DREiMu9BktcGuS9).
 
 ## Training
+Use the following command to train for multi-scale generation on FFHQ.
 
 ```
 python -u -m torch.distributed.launch --nproc_per_node=8 --master_port=8899 tools/train.py configs/scaleparty/FFHQ_ScaleParty.py --launcher pytorch --work-dir path-to-workdir --cfg-options data.samples_per_gpu=4 
 ``` 
+
+For our pretrained models, we started training with the ScaleParty-noSCFull configuration, and then fine-tuned for scale-consistency and partial training in order to reduce the computational cost.
 
 ## Creating the fid pkl for evaluation. 
 First, use the resize.py script to resize the dataset to the required sizes for all evaluation calculations. This is important as it replicates the resizing procedure we deploy during training.
