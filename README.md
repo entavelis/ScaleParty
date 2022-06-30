@@ -62,15 +62,15 @@ for size in `seq 256 64 512 `; do; echo "ffhq_"$size".pkl"; python tools/utils/i
 If you find this project useful in your research, please consider citing:
 
 ```BibTeX
-@misc{ntavelis2022scaleparty,
-  doi = {10.48550/ARXIV.2204.02273},
-  url = {https://arxiv.org/abs/2204.02273},
-  author = {Ntavelis, Evangelos and Shahbazi, Mohamad and Kastanis, Iason and Timofte, Radu and Danelljan, Martin and Van Gool, Luc},
-  title = {Arbitrary-Scale Image Synthesis},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+@InProceedings{Ntavelis_2022_CVPR,
+    author    = {Ntavelis, Evangelos and Shahbazi, Mohamad and Kastanis, Iason and Timofte, Radu and Danelljan, Martin and Van Gool, Luc},
+    title     = {Arbitrary-Scale Image Synthesis},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {11533-11542}
 }
+
 
 @misc{2021mmgeneration,
     title={{MMGeneration}: OpenMMLab Generative Model Toolbox and Benchmark},
