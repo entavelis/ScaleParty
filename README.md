@@ -37,7 +37,7 @@ pip install -v -e .
 
 ## Pretrained models
 
-You can find the pretrained models [here](https://owncloud.csem.ch/owncloud/index.php/s/DREiMu9BktcGuS9).
+You can find the pretrained models [here](https://owncloud.csem.ch/owncloud/index.php/s/wLiH8jXBcEsuGmt). The password is the project's name with lowercase characters.
 
 ## Training
 Use the following command to train for multi-scale generation on FFHQ.
